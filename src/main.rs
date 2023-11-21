@@ -16,6 +16,8 @@ fn main() {
         tasks::five::part_two,
         tasks::six::part_one,
         tasks::six::part_two,
+        tasks::seven::part_one,
+        tasks::seven::part_two,
     ];
 
     let (mut day, mut part) = (1, 1);
