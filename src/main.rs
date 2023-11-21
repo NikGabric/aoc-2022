@@ -1,5 +1,7 @@
 #![allow(unused)]
 
+use std::time::Instant;
+
 mod tasks;
 
 fn main() {
@@ -34,5 +36,8 @@ fn main() {
 
 fn run_task(func: fn(), day: i32, part: i32) {
     print!("Running day {}, part number {}: ", day, part);
+    let now = Instant::now();
     func();
+    let elapsed = now.elapsed();
+    println!("Duration of task: {elapsed:?}");
 }
