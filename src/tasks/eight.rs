@@ -8,8 +8,6 @@ pub fn part_one() {
     let mut grid: Vec<Vec<i8>> = init_grid(text);
     let mut sum: i32 = (grid.len() * grid[0].len()) as i32;
 
-    // grid.iter().for_each(|line| println!("{line:?}"));
-
     for i in 1..grid.len() - 1 {
         for j in 1..grid[0].len() - 1 {
             let mut visible: bool = true;
